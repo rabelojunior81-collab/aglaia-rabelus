@@ -3,7 +3,7 @@
 Run: `2026-10-24-aglaia-fase0-public-foundation`
 Harness: Codex Desktop/CLI · identidade Git: `argenta-macbook-codex`
 Produto: Aglaia Studio · protocolo comum: Rabelus Matrix Protocol
-Estado: `OPEN` até commit, push e releitura do consumidor.
+Estado: `CLOSED`.
 
 ## Envelope
 
@@ -38,6 +38,9 @@ Executado no checkout Aglaia:
 - `python3 scripts/aglaia.py verify --profile full`: `PASS`.
 - Fluxo real da CLI em run `fase0-test-2`: start → event → close; verificação impact posterior `PASS`.
 - `git diff --check`: `PASS` antes do primeiro commit.
+- Commit inicial publicado em `main`: `8c242776afc94fddc9a19a1e201a4cd41b1c848b`; push normal confirmou remoto na mesma revisão.
+- Releitura GitHub via API pública confirmou visibilidade pública e os blobs consumidos. Os hashes do README, LICENSE, script, Gênesis e deste ledger na revisão inicial coincidiram com hashes Git locais.
+- GitHub Actions **Foundation checks** no commit inicial: run `40067633819`, conclusão `success`.
 
 Essas evidências são testes locais nesta máquina. Não provam adapter/harness, produto editor, mídia, API, comportamento em outro host ou aceite visual/humano.
 
@@ -45,7 +48,7 @@ Essas evidências são testes locais nesta máquina. Não provam adapter/harness
 
 - **BEFORE:** estado do diretório existente e remote foram inspecionados; fontes de pesquisa foram lidas; commits Buddy/LARS registrados; autorização e envelope delimitados.
 - **DURING:** docs e tooling foram criados; falhas observadas nos próprios testes corrigidas; mudanças de foco e limites acima registrados.
-- **AFTER:** pendente no começo do registro: conferir diff final, confirmar `git config user.name`, fazer commit e push sem force, conferir visibilidade e reread público de README/LICENSE/scripts/ledger com blob SHAs, registrar commit e digest final. Até então, ledger fica `OPEN` e não afirma publicação consumida.
+- **AFTER:** commit e push normal feitos; árvore remota corresponde ao commit; blobs públicos relidos e hashes comparados; workflow CI concluído com sucesso; arquivos de fonte pública conferidos; branch local limpa após a publicação inicial. Este ledger é fechado por commit de follow-up no mesmo repositório. A releitura final desse próprio fechamento será registrada no ledger de coordenação da sessão.
 
 ## Verificação final de fontes e sanitização
 
