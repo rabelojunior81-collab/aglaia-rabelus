@@ -41,6 +41,9 @@ Executado no checkout Aglaia:
 - Commit inicial publicado em `main`: `8c242776afc94fddc9a19a1e201a4cd41b1c848b`; push normal confirmou remoto na mesma revisão.
 - Releitura GitHub via API pública confirmou visibilidade pública e os blobs consumidos. Os hashes do README, LICENSE, script, Gênesis e deste ledger na revisão inicial coincidiram com hashes Git locais.
 - GitHub Actions **Foundation checks** no commit inicial: run `40067633819`, conclusão `success`.
+- Follow-up de fechamento publicado no commit `80c353cea394e423e01783da6028c1a903e7a22d`; push e ponteiro remoto `main` coincidiram.
+- Consumer reread do follow-up confirmou `docs/ESTADO.md` blob `00e40d4e8c10d7db6f2194eb666558cc75e8ad8f` e este ledger blob `10cea10bfc3688185a793ae2e13db647ccd085c7`, com correspondência a `git hash-object` local.
+- Run de CI para o follow-up estava `queued` no momento desta anotação; o run anterior no conteúdo funcional concluiu com sucesso. Verificação do run final pendente de completar antes do fechamento global.
 
 Essas evidências são testes locais nesta máquina. Não provam adapter/harness, produto editor, mídia, API, comportamento em outro host ou aceite visual/humano.
 
@@ -48,7 +51,7 @@ Essas evidências são testes locais nesta máquina. Não provam adapter/harness
 
 - **BEFORE:** estado do diretório existente e remote foram inspecionados; fontes de pesquisa foram lidas; commits Buddy/LARS registrados; autorização e envelope delimitados.
 - **DURING:** docs e tooling foram criados; falhas observadas nos próprios testes corrigidas; mudanças de foco e limites acima registrados.
-- **AFTER:** commit e push normal feitos; árvore remota corresponde ao commit; blobs públicos relidos e hashes comparados; workflow CI concluído com sucesso; arquivos de fonte pública conferidos; branch local limpa após a publicação inicial. Este ledger é fechado por commit de follow-up no mesmo repositório. A releitura final desse próprio fechamento será registrada no ledger de coordenação da sessão.
+- **AFTER:** commits e pushes normais feitos; árvore remota corresponde aos commits; blobs públicos relidos e hashes comparados; workflow CI passou no commit funcional inicial; commit final de docs deve também passar antes do fechamento global. Esta releitura registra a revisão de fechamento anterior e será atualizada somente com uma correção nova se o gate remoto falhar.
 
 ## Verificação final de fontes e sanitização
 

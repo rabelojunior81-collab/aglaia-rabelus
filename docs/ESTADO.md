@@ -22,4 +22,4 @@
 
 ## Próximo gate
 
-Fechar Fase 0 com testes locais, publicação e releitura pública do commit. Em seguida, levantar uma SPEC de pesquisa/experimento de stack com critérios de licença, fluxo didático, edição multiângulo, saída vertical e custo. A decisão requer evidência e pode continuar sem escolha se nenhum candidato satisfizer o contrato.
+Iniciar a Fase 1 com uma SPEC de pesquisa/experimento de stack, incluindo critérios de licença, fluxo didático, edição multiângulo, saída vertical e custo. A decisão requer evidência e pode continuar sem escolha se nenhum candidato satisfizer o contrato.
